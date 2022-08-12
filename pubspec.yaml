@@ -1,0 +1,16 @@
+name: route_core
+description: 路由生成和管理工具
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  source_gen: ^1.2.1
+  build: ^2.2.1
+
+flutter:

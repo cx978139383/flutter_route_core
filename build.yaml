@@ -1,0 +1,20 @@
+builders:
+  route_page_builder:
+    import: package:route_core/builder/builder.dart
+    builder_factories:
+      - builderForRoutePage
+    build_extensions:
+      .dart:
+        - .page.dart
+    auto_apply: dependents
+    runs_before:
+      - route_core|route_manager_builder
+
+  route_manager_builder:
+    import: package:route_core/builder/builder.dart
+    builder_factories:
+      - builderForRouteManager
+    build_extensions:
+      .dart:
+        - .app.route.dart
+    build_to: source
